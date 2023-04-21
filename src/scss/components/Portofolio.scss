@@ -1,0 +1,284 @@
+#portofolio{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+h2{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    font-family: $titleFont;
+    font-weight: 600;
+    color: $primary;
+    text-align: center;
+}
+
+h3{
+    padding-top: 1.5rem;
+    color: black;
+    font-family: $titleFont;
+    font-size: 1.25rem;
+    line-height: 1.75rem;   
+    text-align: center;
+}
+
+.projectCards{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.projectCard{
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    // padding: .2rem;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 20px 20px;
+}
+
+.projectImg{
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 20px 20px;
+    width: 100%;
+    transition: .3s all;
+}
+
+
+.projectDescription{
+    // border: 1px solid rgba(128, 128, 128, .5);
+    border-radius: .3rem;
+    padding: 0px 1rem .5rem 1rem;
+}
+
+h6{
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(#12c2e9, #f64f59, #f64f59);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: $titleFont;
+    padding-bottom:.4rem;
+}
+
+h5{
+    font-size: 1.3rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: $titleFont;
+    padding-bottom: .4rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+a{
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s all;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 5px;
+}
+
+
+.projectBtn{
+    border: 1px solid black;
+    margin-top: 5%;
+    padding: 5px 20px;
+    background-color: white;
+    transition: all 0.3s;
+    position: relative;
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+    font-size: .8rem;
+
+    overflow: hidden;
+
+    max-width: 220px;
+    min-width: 220px;
+}
+
+
+.projectBtn:hover{
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.projectBtn:before{
+
+    content: '';
+    background-color: white;
+
+    position: absolute;
+
+    top:0;
+    left:0;
+    width: 100%;
+    height: 50px;
+
+    transform: translateX(-100%) rotate(45deg);
+
+    transition: all 0.4s;
+
+}
+
+
+
+.projectBtn:hover:before{
+
+    transform: translate(100%) rotate(45deg);
+
+}
+
+
+.settings{
+    position: absolute;
+    top:2%;
+    right: 3%;
+}
+
+.settings i{
+    padding: 5px;
+}
+
+
+.options{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: .5rem;
+    
+
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 1rem;
+    animation: fadeIn  linear .5s 1;
+}
+
+i{
+    color: #eee;
+    cursor: pointer;
+}
+
+.settings i:hover{
+    color: red;
+}
+
+.none{
+    display: none;
+}
+
+.hideCard{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+
+
+
+
+@media (min-width: 640px){
+    #portofolio{
+        h2{
+            font-size: 3rem;
+             line-height: 1;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .projectCards{
+            width: 75%;
+        }
+
+        .projectBtn{
+            max-width: 220px;
+            min-width: 220px;
+        }
+
+    }
+}
+
+
+@media (min-width: 768px){
+    #portofolio{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .projectCards{
+        gap: 2.5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projectCard{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    a{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:1024px){
+    #portofolio{
+
+
+        h2{
+            font-size: 3.75rem;
+            line-height: 1;
+        }
+
+        h3{
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        .projectCards{
+        
+           grid-template-columns: 1fr 1fr 1fr;
+        }
+
+       
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: translatey(-10px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,207 @@
+.formContainer {
+  background-image: linear-gradient(lightBlue, royalBlue);
+  height: 100vh;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.1);
+}
+.formContainer .formBox {
+  width: 50%;
+  margin: 10% auto;
+  background-color: white;
+  padding-bottom: 1.5rem;
+  min-width: 350px;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 20px 20px;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.formContainer .formBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer .formImg {
+  background-image: url("../imgs/background.jpg");
+  background-position: center;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer .shadowOverlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.formContainer .selectBox {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer input {
+  margin: 1rem;
+  width: 80%;
+}
+.formContainer textarea {
+  width: 300px;
+  height: 100px;
+}
+.formContainer h4 {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.formContainer .alertBox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 17%;
+  width: 70%;
+  min-width: 400px;
+  max-width: 400px;
+}
+.formContainer .alertMsg {
+  background-color: lightcoral;
+  color: black;
+  padding: 5px 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  animation: slideIn linear 0.5s 1;
+  margin: 0.3rem;
+}
+.formContainer .buttons button {
+  margin-right: 0.5rem;
+}
+.formContainer .projectBtn {
+  border: 1px solid black;
+  margin-top: 5%;
+  padding: 5px 20px;
+  background-color: white;
+  transition: all 0.3s;
+  position: relative;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  max-width: 220px;
+  min-width: 220px;
+}
+.formContainer .projectBtn:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.formContainer .projectBtn:before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.4s;
+}
+.formContainer .projectBtn:hover:before {
+  transform: translate(100%) rotate(45deg);
+}
+.formContainer .projectBtn2 {
+  border: 1px solid black;
+  margin-top: 5%;
+  padding: 5px 20px;
+  background-color: white;
+  transition: all 0.3s;
+  position: relative;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  max-width: 220px;
+  min-width: 220px;
+}
+.formContainer .projectBtn2:hover {
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+}
+.formContainer .projectBtn2:before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.4s;
+}
+.formContainer .projectBtn2:hover:before {
+  transform: translate(100%) rotate(45deg);
+}
+
+@media (min-width: 400px) {
+  .formContainer .formBox {
+    width: 30%;
+    margin: 10% auto;
+    background-color: white;
+    padding-bottom: 1.5rem;
+    min-width: 400px;
+  }
+}
+@media (min-width: 610px) {
+  .formContainer .alertBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 15%;
+    width: 60%;
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+@media (min-width: 720px) {
+  .formContainer .formBox {
+    width: 30%;
+    margin: 10% auto;
+    background-color: white;
+    padding-bottom: 1.5rem;
+    min-width: 600px;
+  }
+  .formContainer textarea {
+    width: 500px;
+    height: 100px;
+  }
+  .formContainer .alertBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1250px) {
+  .formContainer .alertBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 20%;
+    min-width: 330px;
+    max-width: 330px;
+  }
+}
+
+/*# sourceMappingURL=addForm.css.map */

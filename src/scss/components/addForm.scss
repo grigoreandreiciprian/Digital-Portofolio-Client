@@ -1,0 +1,302 @@
+
+.formContainer{
+
+    background-image: linear-gradient(lightBlue,royalBlue);
+    height: 100vh;
+    width: 100%;
+    border: 1px solid rgb(128, 128, 128,.1);
+    .formBox{
+        width: 50%;
+        margin:10%  auto;
+     
+         background-color: white;
+         padding-bottom: 1.5rem;
+         min-width: 350px;
+        
+
+         border-top-left-radius: 15px 15px;
+         border-top-right-radius: 20px 20px;
+         border-bottom-left-radius: 15px 15px;
+         border-bottom-right-radius: 20px 20px;
+
+         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+          
+      
+    }
+    .formBody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formImg{
+        background-image: url("../imgs/background.jpg");
+        background-position: center;
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .shadowOverlay{
+        background-color: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+
+    .selectBox{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        margin: 1rem;
+        width: 80%;
+    }
+
+    textarea{
+         width: 300px;
+         height: 100px;
+    }
+
+    h4{
+        font-size: 1.3rem;
+        padding: .5rem;
+    }
+
+    .alertBox{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 17%;
+        width: 70%;
+        min-width: 400px;
+        max-width: 400px;
+        // right: 20%;
+    }
+
+    .alertMsg{
+       
+        background-color: lightcoral;
+        color: black;
+        padding: 5px 20px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        animation: slideIn linear .5s 1;
+        margin: .3rem;
+    }
+
+
+    .buttons button{
+        margin-right: .5rem;
+    }
+
+    .projectBtn{
+        border: 1px solid black;
+        margin-top: 5%;
+        padding: 5px 20px;
+        background-color: white;
+        transition: all 0.3s;
+        position: relative;
+        text-align: center;
+        color: black;
+        letter-spacing: 5px;
+        font-size: .8rem;
+    
+        overflow: hidden;
+    
+        max-width: 220px;
+        min-width: 220px;
+    }
+    
+    
+    .projectBtn:hover{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+    
+    
+    
+    .projectBtn:before{
+    
+        content: '';
+        background-color: white;
+    
+        position: absolute;
+    
+        top:0;
+        left:0;
+        width: 100%;
+        height: 50px;
+    
+        transform: translateX(-100%) rotate(45deg);
+    
+        transition: all 0.4s;
+    
+    }
+    
+    
+    
+    .projectBtn:hover:before{
+    
+        transform: translate(100%) rotate(45deg);
+    
+    }
+
+    .projectBtn2{
+        border: 1px solid black;
+        margin-top: 5%;
+        padding: 5px 20px;
+        background-color: white;
+        transition: all 0.3s;
+        position: relative;
+        text-align: center;
+        color: black;
+        letter-spacing: 5px;
+        font-size: .8rem;
+    
+        overflow: hidden;
+    
+        max-width: 220px;
+        min-width: 220px;
+    }
+    
+    
+    .projectBtn2:hover{
+        background-color: royalblue;
+        color: white;
+        cursor: pointer;
+    }
+    
+    
+    
+    .projectBtn2:before{
+    
+        content: '';
+        background-color: white;
+    
+        position: absolute;
+    
+        top:0;
+        left:0;
+        width: 100%;
+        height: 50px;
+    
+        transform: translateX(-100%) rotate(45deg);
+    
+        transition: all 0.4s;
+    
+    }
+    
+    
+    
+    .projectBtn2:hover:before{
+    
+        transform: translate(100%) rotate(45deg);
+    
+    }
+    
+
+
+
+}
+
+
+@media (min-width:400px){
+    .formContainer{
+
+        .formBox{
+            width: 30%;
+            margin:10%  auto;
+            //  border: 2px solid red;
+             background-color: white;
+             padding-bottom: 1.5rem;
+             min-width: 400px;
+          
+        }
+
+    }
+}
+
+@media (min-width:610px){
+    .formContainer{
+        .alertBox{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 15%;
+            width: 60%;
+            min-width: 400px;
+            max-width: 400px;
+            // right: 20%;
+    
+    
+        }
+    
+    }
+}
+
+
+@media (min-width:720px){
+
+    .formContainer{
+
+    
+    .formBox{
+        width: 30%;
+        margin:10%  auto;
+        //  border: 2px solid red;
+         background-color: white;
+         padding-bottom: 1.5rem;
+         min-width: 600px
+    }
+
+    textarea{
+        width: 500px;
+        height: 100px;
+   }
+
+   .alertBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    min-width: 400px;
+    max-width: 400px;
+    // right: 20%;
+  
+}
+
+
+}
+}
+
+@media(min-width:1250px){
+    .formContainer{
+        .alertBox{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 20%;
+            right: 0;
+            width: 20%;
+            min-width: 330px;
+            max-width: 330px;
+    
+        }
+    }
+}

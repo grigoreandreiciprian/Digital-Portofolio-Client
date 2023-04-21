@@ -1,0 +1,128 @@
+.introBox{
+    padding-top: 2rem;
+    z-index: 30;
+
+
+     h1{
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+        color: white;
+        text-align: center;
+        font-family: $titleFont;
+        margin: 0px;
+
+     }
+
+     .socialBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0.75rem;
+     }
+
+     .conect{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+     }
+
+     .conect p{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        text-transform: uppercase;
+        color: white;
+     }
+
+     .arrow{
+        display: none;
+     }
+
+     .socialIcons{
+        // padding-top: 1.25rem;
+        padding-left: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .socialBox .socialIcons i{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-left: 1rem;
+        color: white;  
+     }
+
+     .socialBox .socialIcons i:hover{
+        color: yellow;
+        cursor: pointer;
+     }
+}
+
+
+
+@media (min-width: 640px){
+    .introBox{
+        padding-top: 2.5rem;
+    
+
+    h1{
+        text-align: left;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .socialBox{
+        padding-top: 1.25rem;
+        flex-direction: row;
+    }
+
+    .conect{
+        justify-content: flex-start;
+    }
+
+    .arrow{
+        display: block;
+    }
+
+     .arrow i{
+        display: block;
+        color: yellow;
+        font-size: 1.175rem;
+        line-height: 2.25rem;
+        margin-left: .4rem;
+    }
+
+    .socialIcons{
+        padding-top: 0px;
+        justify-content: flex-start;
+    }
+}
+}
+
+@media (min-width:768px){
+    .introBox{
+
+        h1{
+            font-size: 3.75rem;
+            line-height: 1;
+        }
+
+        .conect{
+            padding-left: 0.25rem
+        }
+    }
+}
+
+
+@media (min-width: 1024px){
+    .introBox{
+        padding-top: 0px;
+        padding-left: 2rem;
+    
+
+    .socialBox{
+        justify-content: flex-start;
+    }
+}
+}

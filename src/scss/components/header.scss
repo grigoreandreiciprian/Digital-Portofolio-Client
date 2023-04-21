@@ -1,0 +1,128 @@
+.headerBox{
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 60vh;
+    position: relative;
+
+
+    .headerShadow{
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        // z-index: 20;
+        background-image: linear-gradient(to right, rgba(85, 64, 174, 0.95) , rgb(85 64 174 / 0));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .introContainer{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        z-index: 30;
+    }
+
+    .introContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .profilePic{
+        border-radius: 9999px;
+        border: 8px solid rgba(85 64 175);
+        z-index: 9999;
+    }
+
+    .introContent .profilePic img{
+        height: 12rem;
+        border-radius: 9999px;
+    }
+
+    .alertMsg{
+        position: absolute;
+        width: 20%;
+        background-color: lightgreen;
+        color: black;
+        padding: 5px 20px;
+        top: 50%;
+        right: 0;
+        font-size: 1.3rem;
+        font-weight: 500;
+        animation: slideIn linear .5s 1;
+    }
+
+    .close{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: .4rem;
+        padding-right: .4rem;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width:640px){
+    .headerBox{
+
+        height: 80vh;
+        .introContainer{
+            padding-top: 14rem;
+            padding-bottom: 12rem;
+        }
+
+        .profilePic img{
+            height: 14rem;
+        }
+
+        .introContent .profilePic img{
+            border-radius: 9999px;
+            height: 14rem;
+            object-position: center;
+        }
+    }
+}
+
+@media (min-width:1024px){
+    .headerBox{
+        height: 60vh;
+        .introContainer{
+            padding-top: 16rem;
+            padding-bottom: 12rem;
+        }
+
+        .introContent{
+            flex-direction: row;
+        }
+    }
+}
+
+
+@keyframes slideIn {
+    0%{
+        transform: translatex(200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
